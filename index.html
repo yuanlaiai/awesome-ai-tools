@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🧰 Awesome AI Tools · 猿来AI精选</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0B0E17;
+  --bg-card: #141B2D;
+  --border: #1E293B;
+  --text: #E6EAED;
+  --text2: #94A3B8;
+  --text3: #475569;
+  --orange: #FF8C42;
+  --gold: #FFB347;
+  --cyan: #00D9FF;
+  --purple: #A78BFA;
+  --green: #4ADE80;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans SC', sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1000px; margin:0 auto; padding:0 20px; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(255,140,66,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 50%, rgba(0,217,255,0.04) 0%, transparent 60%);
+  pointer-events:none;
+}
+.hero-icon { font-size:3rem; margin-bottom:12px; }
+.hero h1 {
+  font-size: clamp(1.6rem,4vw,2.2rem);
+  font-weight:800;
+  background: linear-gradient(135deg, var(--orange), var(--gold), var(--cyan));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.hero p { color:var(--text2); margin-top:8px; font-size:0.95rem; }
+.hero .stats {
+  display:flex; gap:20px; justify-content:center; flex-wrap:wrap;
+  margin-top:16px;
+}
+.hero .stat {
+  padding:4px 14px; background:var(--bg-card); border:1px solid var(--border);
+  border-radius:20px; font-size:0.8rem; color:var(--text3);
+}
+.hero .stat strong { color:var(--orange); }
+
+/* Search */
+.search-bar {
+  max-width: 500px;
+  margin: 0 auto 32px;
+  position: relative;
+}
+.search-bar input {
+  width:100%;
+  padding:12px 16px 12px 44px;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  color:var(--text);
+  font-size:0.9rem;
+  font-family:inherit;
+  outline:none;
+  transition:border-color .3s;
+}
+.search-bar input:focus { border-color:var(--orange); }
+.search-bar input::placeholder { color:var(--text3); }
+.search-bar .search-icon {
+  position:absolute; left:16px; top:50%; transform:translateY(-50%);
+  color:var(--text3); font-size:0.9rem;
+}
+
+/* Nav tabs */
+.cat-nav {
+  display:flex; gap:8px; flex-wrap:wrap; justify-content:center;
+  margin-bottom:32px;
+}
+.cat-btn {
+  padding:6px 16px;
+  background:transparent;
+  border:1px solid var(--border);
+  border-radius:100px;
+  color:var(--text2);
+  font-size:0.8rem;
+  font-family:inherit;
+  cursor:pointer;
+  transition:all .3s;
+}
+.cat-btn:hover, .cat-btn.active {
+  border-color:var(--orange);
+  color:var(--orange);
+  background:rgba(255,140,66,0.1);
+}
+
+/* Tool cards */
+.tools-section { margin-bottom: 40px; }
+.section-title {
+  font-size:1.1rem;
+  font-weight:700;
+  margin-bottom:16px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.tool-card {
+  display:grid;
+  grid-template-columns: 1fr auto auto;
+  gap:12px;
+  align-items:center;
+  padding:12px 16px;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  margin-bottom:8px;
+  transition:all .3s;
+}
+.tool-card:hover {
+  border-color:rgba(255,140,66,0.3);
+  transform:translateX(4px);
+}
+.tool-card .tool-name {
+  font-weight:600;
+  font-size:0.9rem;
+  color:var(--cyan);
+  text-decoration:none;
+}
+.tool-card .tool-name:hover { text-decoration:underline; color:var(--orange); }
+.tool-card .tool-desc { font-size:0.82rem; color:var(--text2); margin-top:2px; }
+.tool-card .tool-price {
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.75rem;
+  padding:3px 10px;
+  border-radius:6px;
+  white-space:nowrap;
+}
+.price-free { background:rgba(74,222,128,0.1); color:var(--green); border:1px solid rgba(74,222,128,0.2); }
+.price-paid { background:rgba(255,140,66,0.1); color:var(--gold); border:1px solid rgba(255,140,66,0.2); }
+.price-free-paid { background:rgba(167,139,250,0.1); color:var(--purple); border:1px solid rgba(167,139,250,0.2); }
+.tool-card .tool-reason {
+  font-size:0.75rem;
+  color:var(--text3);
+  max-width:200px;
+  text-align:right;
+}
+
+/* Footer */
+.footer {
+  text-align:center;
+  padding:40px 20px;
+  border-top:1px solid var(--border);
+  color:var(--text3);
+  font-size:0.82rem;
+}
+.footer a { color:var(--orange); text-decoration:none; }
+.footer a:hover { text-decoration:underline; }
+
+/* Responsive */
+@media (max-width:640px) {
+  .tool-card {
+    grid-template-columns:1fr;
+    gap:6px;
+  }
+  .tool-card .tool-reason { text-align:left; max-width:none; }
+  .tool-card .tool-price { width:fit-content; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-icon">🧰</div>
+  <h1>Awesome AI Tools</h1>
+  <p>猿来AI 精选 · 每一款都亲自用过 · 持续更新</p>
+  <div class="stats">
+    <span class="stat">📦 <strong id="toolCount">0</strong> 款工具</span>
+    <span class="stat">📂 <strong id="catCount">0</strong> 个分类</span>
+    <span class="stat">🔄 持续更新</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="搜索工具名称或说明..." oninput="filterTools()">
+  </div>
+
+  <div class="cat-nav" id="catNav">
+    <button class="cat-btn active" data-cat="all" onclick="filterByCat('all')">全部</button>
+  </div>
+
+  <div id="toolsContainer"></div>
+</div>
+
+<div class="footer">
+  <p>🐒 一只想让人人秒懂AI的猿 · <a href="https://yuanlaiai.github.io">猿来AI</a></p>
+  <p style="margin-top:4px;">开源项目 · <a href="https://github.com/yuanlaiai/awesome-ai-tools">GitHub</a> · MIT</p>
+</div>
+
+<script>
+var toolsData = {
+  "💬 聊天助手": [
+    {name:"ChatGPT", url:"https://chat.openai.com", desc:"OpenAI 旗舰聊天模型，支持 GPT-4o", price:"免费 / Plus $20/月", priceClass:"price-free-paid", reason:"全能型，生态最完善"},
+    {name:"Claude", url:"https://claude.ai", desc:"Anthropic 出品，长上下文之王", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"200K 上下文，代码和写作极强"},
+    {name:"Gemini", url:"https://gemini.google.com", desc:"Google 多模态模型", price:"免费 / Advanced $20/月", priceClass:"price-free-paid", reason:"原生多模态，Google 生态整合"},
+    {name:"DeepSeek", url:"https://chat.deepseek.com", desc:"国产开源模型，性价比之王", price:"免费", priceClass:"price-free", reason:"推理能力强，中文友好"},
+    {name:"Kimi", url:"https://kimi.moonshot.cn", desc:"月之暗面，超长文本分析", price:"免费", priceClass:"price-free", reason:"200 万字上下文，文档分析利器"},
+    {name:"豆包", url:"https://www.doubao.com", desc:"字节跳动 AI 助手", price:"免费", priceClass:"price-free", reason:"中文理解好，功能全面"},
+    {name:"通义千问", url:"https://tongyi.aliyun.com", desc:"阿里云大模型", price:"免费 / 企业版付费", priceClass:"price-free-paid", reason:"阿里生态联动，文档处理强"}
+  ],
+  "✍️ 写作与内容": [
+    {name:"Notion AI", url:"https://www.notion.so/product/ai", desc:"Notion 内置 AI 写作助手", price:"$10/月（附加）", priceClass:"price-paid", reason:"写作+知识库一体化"},
+    {name:"Grammarly", url:"https://www.grammarly.com", desc:"英文写作校对增强", price:"免费 / Premium $12/月", priceClass:"price-free-paid", reason:"最专业的英文写作助手"},
+    {name:"Jasper", url:"https://www.jasper.ai", desc:"营销文案生成", price:"Creator $49/月", priceClass:"price-paid", reason:"品牌声音一致性好"},
+    {name:"秘塔写作猫", url:"https://xiezuocat.com", desc:"中文写作辅助", price:"免费 / Pro ￥99/年", priceClass:"price-free-paid", reason:"中文语法校对优秀"}
+  ],
+  "🎨 图像生成": [
+    {name:"Midjourney", url:"https://www.midjourney.com", desc:"顶级 AI 图像生成", price:"Basic $10/月", priceClass:"price-paid", reason:"艺术性最强，风格多样"},
+    {name:"DALL·E 3", url:"https://openai.com/dall-e-3", desc:"OpenAI 图像生成", price:"ChatGPT Plus 含", priceClass:"price-paid", reason:"文字理解最好"},
+    {name:"Stable Diffusion", url:"https://stability.ai", desc:"开源图像生成模型", price:"免费（自部署）", priceClass:"price-free", reason:"完全可控，本地运行"},
+    {name:"ComfyUI", url:"https://www.comfyui.org", desc:"SD 工作流编辑器", price:"免费开源", priceClass:"price-free", reason:"节点式工作流，专业级控制"},
+    {name:"Leonardo.ai", url:"https://leonardo.ai", desc:"游戏资产生成平台", price:"免费 / Pro $12/月", priceClass:"price-free-paid", reason:"游戏素材+模型训练"},
+    {name:"即梦", url:"https://jimeng.jianying.com", desc:"字节 AI 绘图", price:"免费", priceClass:"price-free", reason:"中文友好，质量不错"}
+  ],
+  "🎬 视频制作": [
+    {name:"Sora", url:"https://sora.com", desc:"OpenAI 文生视频", price:"ChatGPT Plus 含", priceClass:"price-paid", reason:"画质最高的文生视频"},
+    {name:"Runway Gen-3", url:"https://runwayml.com", desc:"AI 视频编辑平台", price:"Standard $15/月", priceClass:"price-paid", reason:"功能最全的视频 AI 工具"},
+    {name:"Pika", url:"https://pika.art", desc:"轻松视频生成", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"上手简单，效果自然"},
+    {name:"剪映", url:"https://jianying.com", desc:"字节跳动视频剪辑", price:"免费", priceClass:"price-free", reason:"AI 功能丰富，中文首选"},
+    {name:"HeyGen", url:"https://www.heygen.com", desc:"AI 数字人视频", price:"免费 / Creator $29/月", priceClass:"price-free-paid", reason:"数字人效果最真实"},
+    {name:"Kling", url:"https://kling.kuaishou.com", desc:"可灵 AI 视频", price:"免费", priceClass:"price-free", reason:"国产优秀，动作流畅"}
+  ],
+  "🎵 音频与音乐": [
+    {name:"ElevenLabs", url:"https://elevenlabs.io", desc:"顶级 AI 语音合成", price:"免费 / Starter $5/月", priceClass:"price-free-paid", reason:"声音最自然，情感丰富"},
+    {name:"Suno", url:"https://suno.com", desc:"AI 音乐生成", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"创作完整的歌曲"},
+    {name:"Udio", url:"https://udio.com", desc:"AI 音乐创作", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"音质优秀，风格多样"},
+    {name:"Fish Audio", url:"https://fish.audio", desc:"开源语音合成", price:"免费", priceClass:"price-free", reason:"声音克隆，本地部署"}
+  ],
+  "💻 编程与开发": [
+    {name:"Cursor", url:"https://cursor.sh", desc:"AI 原生 IDE", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"最好的 AI 编程体验"},
+    {name:"GitHub Copilot", url:"https://github.com/features/copilot", desc:"代码自动补全", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"生态最完善"},
+    {name:"Claude Code", url:"https://claude.ai", desc:"终端 AI 编程助手", price:"API 按量付费", priceClass:"price-paid", reason:"代码理解和重构最强"},
+    {name:"Windsurf", url:"https://codeium.com/windsurf", desc:"AI 编程 IDE", price:"免费 / Pro $15/月", priceClass:"price-free-paid", reason:"免费版功能良心"},
+    {name:"v0", url:"https://v0.dev", desc:"Vercel AI 前端生成", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"前端组件生成最佳"},
+    {name:"通义灵码", url:"https://tongyi.aliyun.com/lingma", desc:"阿里 AI 编程助手", price:"免费", priceClass:"price-free", reason:"中文友好，国产优秀"}
+  ],
+  "📊 办公与效率": [
+    {name:"Gamma", url:"https://gamma.app", desc:"AI 生成演示文稿", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"PPT/文档/网页一键生成"},
+    {name:"Napkin", url:"https://napkin.ai", desc:"AI 图表生成", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"文字转信息图，极简好用"},
+    {name:"Perplexity", url:"https://www.perplexity.ai", desc:"AI 搜索引擎", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"带引用来源的深度搜索"},
+    {name:"NotebookLM", url:"https://notebooklm.google.com", desc:"Google AI 笔记本", price:"免费", priceClass:"price-free", reason:"文档分析+播客生成"},
+    {name:"Otter.ai", url:"https://otter.ai", desc:"AI 会议记录", price:"免费 / Pro $17/月", priceClass:"price-free-paid", reason:"实时转录，自动笔记"},
+    {name:"讯飞听见", url:"https://www.iflyrec.com", desc:"语音转文字", price:"免费额度", priceClass:"price-free-paid", reason:"中文语音识别最强"}
+  ],
+  "🧠 AI 学习": [
+    {name:"Hugging Face", url:"https://huggingface.co", desc:"AI 模型社区", price:"免费 / Pro $9/月", priceClass:"price-free-paid", reason:"最大模型库+在线体验"},
+    {name:"Google Colab", url:"https://colab.research.google.com", desc:"在线 Jupyter 环境", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"免费 GPU，入门首选"},
+    {name:"Prompt Engineering Guide", url:"https://www.promptingguide.ai", desc:"提示词工程指南", price:"免费", priceClass:"price-free", reason:"最全面的提示词教程"},
+    {name:"Learn Prompting", url:"https://learnprompting.org", desc:"提示词学习平台", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"互动式学习体验好"}
+  ]
+};
+
+var currentCat = 'all';
+var currentSearch = '';
+
+function renderTools() {
+  var container = document.getElementById('toolsContainer');
+  var html = '';
+  var toolCount = 0;
+  var catCount = 0;
+
+  for (var cat in toolsData) {
+    var tools = toolsData[cat];
+    var filtered = tools.filter(function(t) {
+      var matchCat = currentCat === 'all' || cat.includes(currentCat);
+      var matchSearch = !currentSearch ||
+        t.name.toLowerCase().includes(currentSearch) ||
+        t.desc.toLowerCase().includes(currentSearch) ||
+        t.reason.toLowerCase().includes(currentSearch);
+      return matchCat && matchSearch;
+    });
+
+    if (filtered.length === 0) continue;
+    catCount++;
+    toolCount += filtered.length;
+
+    html += '<div class="tools-section">';
+    html += '<div class="section-title">' + cat + ' <span style="font-size:0.78rem;color:var(--text3);font-weight:400">(' + filtered.length + ')</span></div>';
+
+    filtered.forEach(function(t) {
+      html += '<div class="tool-card">';
+      html += '<div><a href="' + t.url + '" class="tool-name" target="_blank">' + t.name + '</a>';
+      html += '<div class="tool-desc">' + t.desc + '</div></div>';
+      html += '<span class="tool-price ' + t.priceClass + '">' + t.price + '</span>';
+      html += '<span class="tool-reason">' + t.reason + '</span>';
+      html += '</div>';
+    });
+
+    html += '</div>';
+  }
+
+  container.innerHTML = html || '<p style="text-align:center;color:var(--text3);padding:40px 0;">没有找到匹配的工具 🤔</p>';
+  document.getElementById('toolCount').textContent = toolCount;
+  document.getElementById('catCount').textContent = catCount;
+
+  // Rebuild nav counts
+  updateNavCounts();
+}
+
+function updateNavCounts() {
+  var allCount = 0;
+  for (var cat in toolsData) { allCount += toolsData[cat].length; }
+  var btns = document.querySelectorAll('.cat-btn');
+  btns[0].textContent = '全部 (' + allCount + ')';
+}
+
+function filterByCat(cat) {
+  currentCat = cat;
+  document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.toggle('active', b.dataset.cat === cat); });
+  renderTools();
+}
+
+function filterTools() {
+  currentSearch = document.getElementById('searchInput').value.toLowerCase().trim();
+  renderTools();
+}
+
+// Init nav
+(function() {
+  var nav = document.getElementById('catNav');
+  for (var cat in toolsData) {
+    var btn = document.createElement('button');
+    btn.className = 'cat-btn';
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    btn.onclick = function(c) { return function() { filterByCat(c); }; }(cat);
+    nav.appendChild(btn);
+  }
+  renderTools();
+})();
+</script>
+</body>
+</html>
