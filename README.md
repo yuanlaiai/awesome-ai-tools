@@ -54,6 +54,7 @@
 | [Stable Diffusion](https://stability.ai) | 开源图像生成模型 | 免费（自部署） | 完全可控，本地运行 |
 | [ComfyUI](https://www.comfyui.org) | SD 工作流编辑器 | 免费开源 | 节点式工作流，专业级控制 |
 | [Leonardo.ai](https://leonardo.ai) | 游戏资产生成 | 免费 / Pro $12/月 | 游戏素材+模型训练 |
+| [HairWow](https://www.gohairwow.com) | AI 发型试戴 | 免费 / 付费 | 发型、发色、胡须效果可先用照片预览 |
 | [Flux](https://flux.ai) | 极速图像生成 | 免费 / Pro 付费 | 速度最快的生成模型之一 |
 | [即梦](https://jimeng.jianying.com) | 字节跳动 AI 绘图 | 免费 | 中文友好，质量不错 |
 
