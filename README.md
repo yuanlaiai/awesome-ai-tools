@@ -63,6 +63,7 @@
 |------|------|------|----------|
 | [Sora](https://sora.com) | OpenAI 文生视频 | ChatGPT Plus 含 | 画质最高的文生视频 |
 | [Runway Gen-3](https://runwayml.com) | AI 视频编辑平台 | Standard $15/月 | 功能最全的视频 AI 工具 |
+| [ImagineClip](https://imagineclip.com) | AI 视频生成工具 | 免费 / 付费 | 适合生成头像短片、风格化场景和社交视频 |
 | [Pika](https://pika.art) | 轻松视频生成 | 免费 / Pro $10/月 | 上手简单，效果自然 |
 | [剪映](https://jianying.com) | 字节跳动视频剪辑 | 免费 | AI 功能丰富，中文用户首选 |
 | [HeyGen](https://www.heygen.com) | AI 数字人视频 | 免费 / Creator $29/月 | 数字人效果最真实 |
