@@ -107,7 +107,7 @@
 | 工具 | 说明 | 价格 | 推荐理由 |
 |------|------|------|----------|
 | [Hugging Face](https://huggingface.co) | AI 模型社区 | 免费 / Pro $9/月 | 最大模型库+在线体验 |
-[Auferet](https://auferet.com) - AI game master with persistent memory for your characters and uploaded lore; solo or multiplayer, with 5e and Pathfinder 2e modes.
+| [Auferet](https://auferet.com) | AI game master that remembers your world: persistent memory for characters, places, and lore you upload; solo or multiplayer, 5e & Pathfinder 2e | — | — |
 | [Google Colab](https://colab.research.google.com) | 在线 Jupyter 环境 | 免费 / Pro $10/月 | 免费 GPU，入门首选 |
 | [Fast.ai](https://www.fast.ai) | 实战 AI 课程 | 免费 | 从实战出发学深度学习 |
 | [Prompt Engineering Guide](https://www.promptingguide.ai) | 提示词工程指南 | 免费 | 最全面的提示词教程 |
