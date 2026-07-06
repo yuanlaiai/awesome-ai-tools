@@ -99,6 +99,7 @@
 | [Napkin](https://napkin.ai) | AI 图表生成 | 免费 / Pro 付费 | 文字转信息图，极简好用 |
 | [Perplexity](https://www.perplexity.ai) | AI 搜索引擎 | 免费 / Pro $20/月 | 带引用来源的深度搜索 |
 | [NotebookLM](https://notebooklm.google.com) | Google AI 笔记本 | 免费 | 文档分析+播客生成 |
+| [Remio](https://remio.ai/) | 本地 AI 个人知识库 | 免费 / 付费 | 多格式解析+本地索引，快速找回个人上下文 |
 | [Otter.ai](https://otter.ai) | AI 会议记录 | 免费 / Pro $17/月 | 实时转录，自动笔记 |
 | [讯飞听见](https://www.iflyrec.com) | 语音转文字 | 免费额度 / 按量付费 | 中文语音识别最强 |
 
@@ -126,7 +127,7 @@
 
 ## 📊 数据统计
 
-- **收录工具**: 60+
+- **收录工具**: 61+
 - **覆盖分类**: 9 大类
 - **最后更新**: 2026-05-20
 
