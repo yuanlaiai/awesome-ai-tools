@@ -49,6 +49,7 @@
 
 | 工具 | 说明 | 价格 | 推荐理由 |
 |------|------|------|----------|
+| [Emu](https://image.tinchak0207.xyz) | 在线生成 GPT Image 2 / Nano Banana Pro | 免费 | 登录即用，无需申请 API Key，生成完直接下载 |
 | [Midjourney](https://www.midjourney.com) | 顶级 AI 图像生成 | Basic $10/月 | 艺术性最强，风格多样 |
 | [DALL·E 3](https://openai.com/dall-e-3) | OpenAI 图像生成 | ChatGPT Plus 含 | 文字理解最好，细节精准 |
 | [Stable Diffusion](https://stability.ai) | 开源图像生成模型 | 免费（自部署） | 完全可控，本地运行 |
