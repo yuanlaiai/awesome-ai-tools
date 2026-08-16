@@ -3,7 +3,7 @@
 > 猿来AI 精选 · 每一款都亲自用过 · 持续更新
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--05--20-orange)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--08--16-orange)
 
 **一只想让人人秒懂AI的猿，帮你筛选真正好用的 AI 工具。**
 
@@ -66,6 +66,7 @@
 | [Pika](https://pika.art) | 轻松视频生成 | 免费 / Pro $10/月 | 上手简单，效果自然 |
 | [剪映](https://jianying.com) | 字节跳动视频剪辑 | 免费 | AI 功能丰富，中文用户首选 |
 | [HeyGen](https://www.heygen.com) | AI 数字人视频 | 免费 / Creator $29/月 | 数字人效果最真实 |
+| [videos.social](https://videos.social/?utm_source=yuanlaiai-awesome-ai-tools&utm_medium=directory&utm_campaign=listing-wave-d) | 把博客 / PDF / 提示词做成可编辑无脸视频 | 1 次免费渲染 / $10 起 | 改一处不用整片重渲 |
 | [Kling](https://kling.kuaishou.com) | 可灵 AI 视频 | 免费 | 国产优秀，动作流畅 |
 
 ## 🎵 音频与音乐
@@ -128,7 +129,7 @@
 
 - **收录工具**: 60+
 - **覆盖分类**: 9 大类
-- **最后更新**: 2026-05-20
+- **最后更新**: 2026-08-16
 
 ## 🤝 贡献指南
 
