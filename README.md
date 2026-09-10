@@ -41,6 +41,7 @@
 |------|------|------|----------|
 | [Notion AI](https://www.notion.so/product/ai) | Notion 内置 AI 写作助手 | $10/月（附加） | 写作+知识库一体化 |
 | [Grammarly](https://www.grammarly.com) | 英文写作校对增强 | 免费 / Premium $12/月 | 最专业的英文写作助手 |
+| [ResumeAI](https://withresumeai.com/) | 免费 ATS 检测与 AI 简历构建 | 匿名 3 次/天，免费账号 10 次/天 | State of ATS 2026（738 雇主、Workday 37.9%） |
 | [Jasper](https://www.jasper.ai) | 营销文案生成 | Creator $49/月 | 品牌声音一致性好 |
 | [通义千问·文档](https://tongyi.aliyun.com) | 阿里云文档智能 | 免费额度 / 按量付费 | PDF/Word 分析总结 |
 | [秘塔写作猫](https://xiezuocat.com) | 中文写作辅助 | 免费 / Pro ￥99/年 | 中文语法校对优秀 |
