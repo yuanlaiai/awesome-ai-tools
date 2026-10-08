@@ -121,6 +121,7 @@
 | [Make](https://www.make.com) | 可视化自动化平台 | 免费 / Pro $9/月 | 比 Zapier 更灵活 |
 | [Hugging Face Spaces](https://huggingface.co/spaces) | AI 应用托管 | 免费 / Pro 付费 | 一键部署 AI Demo |
 | [Replicate](https://replicate.com) | 云端 AI 模型 API | 按量付费 | 最易用的模型 API |
+| [Auferet](https://auferet.com) | AI 游戏主持人，单人文字冒险与桌面 RPG | 免费 / 订阅 | 长期记住剧情，可上传自定义世界设定 |
 
 ---
 
