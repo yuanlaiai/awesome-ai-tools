@@ -227,23 +227,25 @@ body {
 <script>
 var toolsData = {
   "💬 聊天助手": [
-    {name:"ChatGPT", url:"https://chat.openai.com", desc:"OpenAI 旗舰聊天模型，支持 GPT-4o", price:"免费 / Plus $20/月", priceClass:"price-free-paid", reason:"全能型，生态最完善"},
-    {name:"Claude", url:"https://claude.ai", desc:"Anthropic 出品，长上下文之王", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"200K 上下文，代码和写作极强"},
-    {name:"Gemini", url:"https://gemini.google.com", desc:"Google 多模态模型", price:"免费 / Advanced $20/月", priceClass:"price-free-paid", reason:"原生多模态，Google 生态整合"},
+    {name:"ChatGPT", url:"https://chat.openai.com", desc:"OpenAI 旗舰助手，覆盖聊天、工作与多模态", price:"免费 / Plus $20/月", priceClass:"price-free-paid", reason:"全能型，生态最完善"},
+    {name:"Claude", url:"https://claude.ai", desc:"Anthropic 旗舰模型，长上下文与写作强", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"代码和写作能力顶级"},
+    {name:"Gemini", url:"https://gemini.google.com", desc:"Google 多模态模型", price:"免费 / Google AI Pro 付费", priceClass:"price-free-paid", reason:"原生多模态，Google 生态整合"},
+    {name:"Grok", url:"https://grok.com", desc:"xAI 实时信息与推理助手", price:"免费 / SuperGrok 付费", priceClass:"price-free-paid", reason:"实时信息整合，风格直接"},
     {name:"DeepSeek", url:"https://chat.deepseek.com", desc:"国产开源模型，性价比之王", price:"免费", priceClass:"price-free", reason:"推理能力强，中文友好"},
-    {name:"Kimi", url:"https://kimi.moonshot.cn", desc:"月之暗面，超长文本分析", price:"免费", priceClass:"price-free", reason:"200 万字上下文，文档分析利器"},
+    {name:"Kimi", url:"https://kimi.moonshot.cn", desc:"月之暗面，超长文档分析", price:"免费", priceClass:"price-free", reason:"长文本与资料整理效率高"},
     {name:"豆包", url:"https://www.doubao.com", desc:"字节跳动 AI 助手", price:"免费", priceClass:"price-free", reason:"中文理解好，功能全面"},
     {name:"通义千问", url:"https://tongyi.aliyun.com", desc:"阿里云大模型", price:"免费 / 企业版付费", priceClass:"price-free-paid", reason:"阿里生态联动，文档处理强"}
   ],
   "✍️ 写作与内容": [
     {name:"Notion AI", url:"https://www.notion.so/product/ai", desc:"Notion 内置 AI 写作助手", price:"$10/月（附加）", priceClass:"price-paid", reason:"写作+知识库一体化"},
     {name:"Grammarly", url:"https://www.grammarly.com", desc:"英文写作校对增强", price:"免费 / Premium $12/月", priceClass:"price-free-paid", reason:"最专业的英文写作助手"},
+    {name:"DeepL Write", url:"https://www.deepl.com/write", desc:"AI 英文润色与改写", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"非母语写作润色自然"},
     {name:"Jasper", url:"https://www.jasper.ai", desc:"营销文案生成", price:"Creator $49/月", priceClass:"price-paid", reason:"品牌声音一致性好"},
     {name:"秘塔写作猫", url:"https://xiezuocat.com", desc:"中文写作辅助", price:"免费 / Pro ￥99/年", priceClass:"price-free-paid", reason:"中文语法校对优秀"}
   ],
   "🎨 图像生成": [
     {name:"Midjourney", url:"https://www.midjourney.com", desc:"顶级 AI 图像生成", price:"Basic $10/月", priceClass:"price-paid", reason:"艺术性最强，风格多样"},
-    {name:"DALL·E 3", url:"https://openai.com/dall-e-3", desc:"OpenAI 图像生成", price:"ChatGPT Plus 含", priceClass:"price-paid", reason:"文字理解最好"},
+    {name:"GPT Image 2.5", url:"https://developers.openai.com/api/docs/guides/image-generation", desc:"OpenAI 图像生成与编辑", price:"ChatGPT Plus 含 / API 按量", priceClass:"price-free-paid", reason:"文字渲染和图像编辑能力最强"},
     {name:"Stable Diffusion", url:"https://stability.ai", desc:"开源图像生成模型", price:"免费（自部署）", priceClass:"price-free", reason:"完全可控，本地运行"},
     {name:"ComfyUI", url:"https://github.com/Comfy-Org/ComfyUI", desc:"SD 工作流编辑器", price:"免费开源", priceClass:"price-free", reason:"节点式工作流，专业级控制"},
     {name:"Leonardo.ai", url:"https://leonardo.ai", desc:"游戏资产生成平台", price:"免费 / Pro $12/月", priceClass:"price-free-paid", reason:"游戏素材+模型训练"},
@@ -252,15 +254,16 @@ var toolsData = {
   ],
   "🎬 视频制作": [
     {name:"Sora", url:"https://sora.com", desc:"OpenAI 文生视频", price:"ChatGPT Plus 含", priceClass:"price-paid", reason:"画质最高的文生视频"},
-    {name:"Runway Gen-3", url:"https://runwayml.com", desc:"AI 视频编辑平台", price:"Standard $15/月", priceClass:"price-paid", reason:"功能最全的视频 AI 工具"},
+    {name:"Runway", url:"https://runwayml.com", desc:"AI 视频生成与编辑平台", price:"Standard $15/月", priceClass:"price-paid", reason:"功能全面，适合专业工作流"},
     {name:"Pika", url:"https://pika.art", desc:"轻松视频生成", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"上手简单，效果自然"},
     {name:"剪映", url:"https://jianying.com", desc:"字节跳动视频剪辑", price:"免费", priceClass:"price-free", reason:"AI 功能丰富，中文首选"},
     {name:"HeyGen", url:"https://www.heygen.com", desc:"AI 数字人视频", price:"免费 / Creator $29/月", priceClass:"price-free-paid", reason:"数字人效果最真实"},
-    {name:"Kling", url:"https://kling.kuaishou.com", desc:"可灵 AI 视频", price:"免费", priceClass:"price-free", reason:"国产优秀，动作流畅"},
+    {name:"Kling AI", url:"https://klingai.com", desc:"可灵 AI 视频与图像生成", price:"免费额度 / 付费套餐", priceClass:"price-free-paid", reason:"动作与镜头控制自然"},
     {name:"harry0703/MoneyPrinterTurbo", url:"https://github.com/harry0703/MoneyPrinterTurbo", desc:"AI 短视频生成器", price:"+1,471 2次上榜", priceClass:"price-free", reason:"ai-video"}
   ],
   "🎵 音频与音乐": [
     {name:"ElevenLabs", url:"https://elevenlabs.io", desc:"顶级 AI 语音合成", price:"免费 / Starter $5/月", priceClass:"price-free-paid", reason:"声音最自然，情感丰富"},
+    {name:"MiniMax Audio", url:"https://www.minimax.io/audio", desc:"语音合成与音乐生成", price:"免费额度 / 按量付费", priceClass:"price-free-paid", reason:"中文音色自然，支持音乐生成"},
     {name:"Suno", url:"https://suno.com", desc:"AI 音乐生成", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"创作完整的歌曲"},
     {name:"Udio", url:"https://udio.com", desc:"AI 音乐创作", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"音质优秀，风格多样"},
     {name:"TTSMaker", url:"https://ttsmaker.com", desc:"在线文字转语音", price:"免费", priceClass:"price-free", reason:"中文语音合成好"},
@@ -268,13 +271,14 @@ var toolsData = {
     {name:"jamiepine/voicebox", url:"https://github.com/jamiepine/voicebox", desc:"开源 AI 语音工作室", price:"+839 2次上榜", priceClass:"price-free", reason:"voice-studio"}
   ],
   "💻 编程与开发": [
-    {name:"Cursor", url:"https://cursor.sh", desc:"AI 原生 IDE", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"最好的 AI 编程体验"},
-    {name:"GitHub Copilot", url:"https://github.com/features/copilot", desc:"代码自动补全", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"生态最完善"},
-    {name:"Claude Code", url:"https://claude.ai", desc:"终端 AI 编程助手", price:"API 按量付费", priceClass:"price-paid", reason:"代码理解和重构最强"},
+    {name:"OpenAI Codex", url:"https://developers.openai.com/codex/", desc:"覆盖 App、CLI、IDE 与云端的编码 Agent", price:"免费额度 / ChatGPT Plus 含 / API 按量", priceClass:"price-free-paid", reason:"复杂任务拆解、代码审查和多端协同最强"},
+    {name:"Claude Code", url:"https://www.anthropic.com/claude-code", desc:"Anthropic 终端编码 Agent", price:"Pro/Max 含 / API 按量", priceClass:"price-free-paid", reason:"长上下文重构与大型代码库理解强"},
+    {name:"GitHub Copilot", url:"https://github.com/features/copilot", desc:"IDE 内代码补全与 Agent 模式", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"生态最完善，团队落地成本低"},
     {name:"Windsurf", url:"https://codeium.com/windsurf", desc:"AI 编程 IDE", price:"免费 / Pro $15/月", priceClass:"price-free-paid", reason:"免费版功能良心"},
     {name:"v0", url:"https://v0.dev", desc:"Vercel AI 前端生成", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"前端组件生成最佳"},
     {name:"Bolt", url:"https://bolt.new", desc:"AI 全栈应用生成", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"从描述到部署最快"},
     {name:"Replit Agent", url:"https://replit.com", desc:"浏览器 IDE + Agent", price:"免费 / Pro $25/月", priceClass:"price-free-paid", reason:"零配置，浏览器即开发环境"},
+    {name:"Cursor", url:"https://cursor.com", desc:"老牌 AI IDE，图形化工作流", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"适合习惯 IDE 界面的用户，非首选"},
     {name:"通义灵码", url:"https://tongyi.aliyun.com/lingma", desc:"阿里 AI 编程助手", price:"免费", priceClass:"price-free", reason:"中文友好，国产优秀"},
     {name:"andrewyng/aisuite", url:"https://github.com/andrewyng/aisuite", desc:"统一多 AI 提供商接口", price:"+290 首次上榜", priceClass:"price-free", reason:"multi-provider"},
     {name:"garrytan/gstack", url:"https://github.com/garrytan/gstack", desc:"YC CEO 的 Claude Code 工具箱", price:"+674 2次上榜", priceClass:"price-free", reason:"claude-code"},
@@ -286,6 +290,7 @@ var toolsData = {
     {name:"Napkin", url:"https://napkin.ai", desc:"AI 图表生成", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"文字转信息图，极简好用"},
     {name:"Perplexity", url:"https://www.perplexity.ai", desc:"AI 搜索引擎", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"带引用来源的深度搜索"},
     {name:"NotebookLM", url:"https://notebooklm.google.com", desc:"Google AI 笔记本", price:"免费", priceClass:"price-free", reason:"文档分析+播客生成"},
+    {name:"Manus", url:"https://manus.im", desc:"通用 AI Agent，自动完成研究与办公任务", price:"免费额度 / Pro 付费", priceClass:"price-free-paid", reason:"端到端任务执行，少人工接管"},
     {name:"Otter.ai", url:"https://otter.ai", desc:"AI 会议记录", price:"免费 / Pro $17/月", priceClass:"price-free-paid", reason:"实时转录，自动笔记"},
     {name:"讯飞听见", url:"https://www.iflyrec.com", desc:"语音转文字", price:"免费额度", priceClass:"price-free-paid", reason:"中文语音识别最强"},
     {name:"Zapier AI", url:"https://zapier.com", desc:"AI 自动化工作流", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"无代码 AI 自动化"},
@@ -297,6 +302,7 @@ var toolsData = {
     {name:"Hugging Face", url:"https://huggingface.co", desc:"AI 模型社区", price:"免费 / Pro $9/月", priceClass:"price-free-paid", reason:"最大模型库+在线体验"},
     {name:"Google Colab", url:"https://colab.research.google.com", desc:"在线 Jupyter 环境", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"免费 GPU，入门首选"},
     {name:"Fast.ai", url:"https://www.fast.ai", desc:"实战 AI 课程", price:"免费", priceClass:"price-free", reason:"从实战出发学深度学习"},
+    {name:"DeepLearning.AI", url:"https://www.deeplearning.ai", desc:"吴恩达团队 AI 课程平台", price:"免费课程 / 付费专项", priceClass:"price-free-paid", reason:"体系完整，适合系统入门"},
     {name:"Hugging Face Spaces", url:"https://huggingface.co/spaces", desc:"AI 应用托管", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"一键部署 AI Demo"},
     {name:"Prompt Engineering Guide", url:"https://www.promptingguide.ai", desc:"提示词工程指南", price:"免费", priceClass:"price-free", reason:"最全面的提示词教程"},
     {name:"Learn Prompting", url:"https://learnprompting.org", desc:"提示词学习平台", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"互动式学习体验好"},
