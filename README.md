@@ -1,11 +1,13 @@
 # 🧰 Awesome AI Tools
 
-> 猿来AI 精选 · 每一款都亲自用过 · 持续更新
+> 猿来AI 精选 · 好用的亲自用过 · 热门项目持续追踪
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--05--20-orange)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--19-orange)
 
 **一只想让人人秒懂AI的猿，帮你筛选真正好用的 AI 工具。**
+
+🌐 **网页版**：[yuanlaiai.github.io/awesome-ai-tools](https://yuanlaiai.github.io/awesome-ai-tools/) · 支持搜索、分类筛选和 GitHub 趋势项目
 
 ---
 
@@ -20,6 +22,19 @@
 - [📊 办公与效率](#-办公与效率)
 - [🧠 AI 学习](#-ai-学习)
 - [🔧 其他实用工具](#-其他实用工具)
+
+> 网页版还包含 AI Agent、Agent Skills、OCR 与文档解析、计算机视觉等 7 个趋势分类。
+
+---
+
+## 🔥 最新收录（2026-10-19）
+
+| 项目 | 说明 | 今日新增 Star |
+|------|------|---------------|
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 开源编码 Agent | +1,310 |
+| [stablyai/orca](https://github.com/stablyai/orca) | 多 Agent 舰队管理与编排 | +1,591 |
+| [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 编码 CLI 的长期记忆与跨厂商交接 | +666 |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 多 Agent 蜂群编排与自适应记忆 | +564 |
 
 ---
 
@@ -54,7 +69,7 @@
 | [Stable Diffusion](https://stability.ai) | 开源图像生成模型 | 免费（自部署） | 完全可控，本地运行 |
 | [ComfyUI](https://www.comfyui.org) | SD 工作流编辑器 | 免费开源 | 节点式工作流，专业级控制 |
 | [Leonardo.ai](https://leonardo.ai) | 游戏资产生成 | 免费 / Pro $12/月 | 游戏素材+模型训练 |
-| [Flux](https://flux.ai) | 极速图像生成 | 免费 / Pro 付费 | 速度最快的生成模型之一 |
+| [Flux](https://blackforestlabs.ai) | Black Forest Labs 图像生成模型 | 免费 / Pro 付费 | 速度最快的生成模型之一 |
 | [即梦](https://jimeng.jianying.com) | 字节跳动 AI 绘图 | 免费 | 中文友好，质量不错 |
 
 ## 🎬 视频制作
@@ -126,9 +141,10 @@
 
 ## 📊 数据统计
 
-- **收录工具**: 60+
-- **覆盖分类**: 9 大类
-- **最后更新**: 2026-05-20
+- **精选工具**: 54 款 + 最新趋势 4 个（本页）
+- **网页收录**: 183 个（含 129 个 GitHub 热门项目）
+- **覆盖分类**: 16 大类
+- **数据更新**: 2026-10-19
 
 ## 🤝 贡献指南
 

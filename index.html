@@ -88,6 +88,12 @@ body {
   position:absolute; left:16px; top:50%; transform:translateY(-50%);
   color:var(--text3); font-size:0.9rem;
 }
+.trend-legend {
+  text-align:center;
+  color:var(--text3);
+  font-size:0.75rem;
+  margin:-20px 0 28px;
+}
 
 /* Nav tabs */
 .cat-nav {
@@ -191,11 +197,11 @@ body {
 <div class="hero">
   <div class="hero-icon">🧰</div>
   <h1>Awesome AI Tools</h1>
-  <p>猿来AI 精选 · 每一款都亲自用过 · 持续更新</p>
+  <p>猿来AI 精选 · 好用的亲自用过 · 热门项目持续追踪</p>
   <div class="stats">
     <span class="stat">📦 <strong id="toolCount">0</strong> 款工具</span>
     <span class="stat">📂 <strong id="catCount">0</strong> 个分类</span>
-    <span class="stat">🔄 持续更新</span>
+    <span class="stat">📅 更新至 <strong id="heroDate">--</strong></span>
   </div>
 </div>
 
@@ -204,6 +210,7 @@ body {
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="搜索工具名称或说明..." oninput="filterTools()">
   </div>
+  <p class="trend-legend">🔥 GitHub 趋势项目的绿色徽标表示「今日新增 Star + 累计上榜次数」</p>
 
   <div class="cat-nav" id="catNav">
     <button class="cat-btn active" data-cat="all" onclick="filterByCat('all')">全部</button>
@@ -214,7 +221,7 @@ body {
 
 <div class="footer">
   <p>🐒 一只想让人人秒懂AI的猿 · <a href="https://yuanlaiai.github.io">猿来AI</a></p>
-  <p style="margin-top:4px;">开源项目 · <a href="https://github.com/yuanlaiai/awesome-ai-tools">GitHub</a> · MIT</p>
+  <p style="margin-top:4px;">数据更新至 <span id="dataDate">--</span> · 开源项目 · <a href="https://github.com/yuanlaiai/awesome-ai-tools">GitHub</a> · MIT</p>
 </div>
 
 <script>
@@ -238,9 +245,10 @@ var toolsData = {
     {name:"Midjourney", url:"https://www.midjourney.com", desc:"顶级 AI 图像生成", price:"Basic $10/月", priceClass:"price-paid", reason:"艺术性最强，风格多样"},
     {name:"DALL·E 3", url:"https://openai.com/dall-e-3", desc:"OpenAI 图像生成", price:"ChatGPT Plus 含", priceClass:"price-paid", reason:"文字理解最好"},
     {name:"Stable Diffusion", url:"https://stability.ai", desc:"开源图像生成模型", price:"免费（自部署）", priceClass:"price-free", reason:"完全可控，本地运行"},
-    {name:"ComfyUI", url:"https://www.comfyui.org", desc:"SD 工作流编辑器", price:"免费开源", priceClass:"price-free", reason:"节点式工作流，专业级控制"},
+    {name:"ComfyUI", url:"https://github.com/Comfy-Org/ComfyUI", desc:"SD 工作流编辑器", price:"免费开源", priceClass:"price-free", reason:"节点式工作流，专业级控制"},
     {name:"Leonardo.ai", url:"https://leonardo.ai", desc:"游戏资产生成平台", price:"免费 / Pro $12/月", priceClass:"price-free-paid", reason:"游戏素材+模型训练"},
-    {name:"即梦", url:"https://jimeng.jianying.com", desc:"字节 AI 绘图", price:"免费", priceClass:"price-free", reason:"中文友好，质量不错"}
+    {name:"即梦", url:"https://jimeng.jianying.com", desc:"字节 AI 绘图", price:"免费", priceClass:"price-free", reason:"中文友好，质量不错"},
+    {name:"Flux", url:"https://blackforestlabs.ai", desc:"Black Forest Labs 图像生成模型", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"速度最快的生成模型之一"}
   ],
   "🎬 视频制作": [
     {name:"Sora", url:"https://sora.com", desc:"OpenAI 文生视频", price:"ChatGPT Plus 含", priceClass:"price-paid", reason:"画质最高的文生视频"},
@@ -248,12 +256,14 @@ var toolsData = {
     {name:"Pika", url:"https://pika.art", desc:"轻松视频生成", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"上手简单，效果自然"},
     {name:"剪映", url:"https://jianying.com", desc:"字节跳动视频剪辑", price:"免费", priceClass:"price-free", reason:"AI 功能丰富，中文首选"},
     {name:"HeyGen", url:"https://www.heygen.com", desc:"AI 数字人视频", price:"免费 / Creator $29/月", priceClass:"price-free-paid", reason:"数字人效果最真实"},
-    {name:"Kling", url:"https://kling.kuaishou.com", desc:"可灵 AI 视频", price:"免费", priceClass:"price-free", reason:"国产优秀，动作流畅"}
+    {name:"Kling", url:"https://kling.kuaishou.com", desc:"可灵 AI 视频", price:"免费", priceClass:"price-free", reason:"国产优秀，动作流畅"},
+    {name:"harry0703/MoneyPrinterTurbo", url:"https://github.com/harry0703/MoneyPrinterTurbo", desc:"AI 短视频生成器", price:"+1,471 2次上榜", priceClass:"price-free", reason:"ai-video"}
   ],
   "🎵 音频与音乐": [
     {name:"ElevenLabs", url:"https://elevenlabs.io", desc:"顶级 AI 语音合成", price:"免费 / Starter $5/月", priceClass:"price-free-paid", reason:"声音最自然，情感丰富"},
     {name:"Suno", url:"https://suno.com", desc:"AI 音乐生成", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"创作完整的歌曲"},
     {name:"Udio", url:"https://udio.com", desc:"AI 音乐创作", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"音质优秀，风格多样"},
+    {name:"TTSMaker", url:"https://ttsmaker.com", desc:"在线文字转语音", price:"免费", priceClass:"price-free", reason:"中文语音合成好"},
     {name:"Fish Audio", url:"https://fish.audio", desc:"开源语音合成", price:"免费", priceClass:"price-free", reason:"声音克隆，本地部署"},
     {name:"jamiepine/voicebox", url:"https://github.com/jamiepine/voicebox", desc:"开源 AI 语音工作室", price:"+839 2次上榜", priceClass:"price-free", reason:"voice-studio"}
   ],
@@ -263,10 +273,13 @@ var toolsData = {
     {name:"Claude Code", url:"https://claude.ai", desc:"终端 AI 编程助手", price:"API 按量付费", priceClass:"price-paid", reason:"代码理解和重构最强"},
     {name:"Windsurf", url:"https://codeium.com/windsurf", desc:"AI 编程 IDE", price:"免费 / Pro $15/月", priceClass:"price-free-paid", reason:"免费版功能良心"},
     {name:"v0", url:"https://v0.dev", desc:"Vercel AI 前端生成", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"前端组件生成最佳"},
+    {name:"Bolt", url:"https://bolt.new", desc:"AI 全栈应用生成", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"从描述到部署最快"},
+    {name:"Replit Agent", url:"https://replit.com", desc:"浏览器 IDE + Agent", price:"免费 / Pro $25/月", priceClass:"price-free-paid", reason:"零配置，浏览器即开发环境"},
     {name:"通义灵码", url:"https://tongyi.aliyun.com/lingma", desc:"阿里 AI 编程助手", price:"免费", priceClass:"price-free", reason:"中文友好，国产优秀"},
     {name:"andrewyng/aisuite", url:"https://github.com/andrewyng/aisuite", desc:"统一多 AI 提供商接口", price:"+290 首次上榜", priceClass:"price-free", reason:"multi-provider"},
     {name:"garrytan/gstack", url:"https://github.com/garrytan/gstack", desc:"YC CEO 的 Claude Code 工具箱", price:"+674 2次上榜", priceClass:"price-free", reason:"claude-code"},
-    {name:"bradautomates/claude-video", url:"https://github.com/bradautomates/claude-video", desc:"让 Claude 看懂视频", price:"+965 首次上榜", priceClass:"price-free", reason:"claude-code"}
+    {name:"bradautomates/claude-video", url:"https://github.com/bradautomates/claude-video", desc:"让 Claude 看懂视频", price:"+965 首次上榜", priceClass:"price-free", reason:"claude-code"},
+    {name:"Replicate", url:"https://replicate.com", desc:"云端 AI 模型 API", price:"按量付费", priceClass:"price-paid", reason:"最易用的模型 API"}
   ],
   "📊 办公与效率": [
     {name:"Gamma", url:"https://gamma.app", desc:"AI 生成演示文稿", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"PPT/文档/网页一键生成"},
@@ -275,28 +288,34 @@ var toolsData = {
     {name:"NotebookLM", url:"https://notebooklm.google.com", desc:"Google AI 笔记本", price:"免费", priceClass:"price-free", reason:"文档分析+播客生成"},
     {name:"Otter.ai", url:"https://otter.ai", desc:"AI 会议记录", price:"免费 / Pro $17/月", priceClass:"price-free-paid", reason:"实时转录，自动笔记"},
     {name:"讯飞听见", url:"https://www.iflyrec.com", desc:"语音转文字", price:"免费额度", priceClass:"price-free-paid", reason:"中文语音识别最强"},
+    {name:"Zapier AI", url:"https://zapier.com", desc:"AI 自动化工作流", price:"免费 / Pro $20/月", priceClass:"price-free-paid", reason:"无代码 AI 自动化"},
+    {name:"n8n", url:"https://n8n.io", desc:"开源工作流自动化", price:"免费自部署 / 云版付费", priceClass:"price-free-paid", reason:"可自托管，灵活性高"},
+    {name:"Make", url:"https://www.make.com", desc:"可视化自动化平台", price:"免费 / Pro $9/月", priceClass:"price-free-paid", reason:"比 Zapier 更灵活"},
     {name:"iOfficeAI/OfficeCLI", url:"https://github.com/iOfficeAI/OfficeCLI", desc:"为 AI Agent 打造的 Office CLI", price:"+1,923 2次上榜", priceClass:"price-free", reason:"agent-tools"}
   ],
   "🧠 AI 学习": [
     {name:"Hugging Face", url:"https://huggingface.co", desc:"AI 模型社区", price:"免费 / Pro $9/月", priceClass:"price-free-paid", reason:"最大模型库+在线体验"},
     {name:"Google Colab", url:"https://colab.research.google.com", desc:"在线 Jupyter 环境", price:"免费 / Pro $10/月", priceClass:"price-free-paid", reason:"免费 GPU，入门首选"},
+    {name:"Fast.ai", url:"https://www.fast.ai", desc:"实战 AI 课程", price:"免费", priceClass:"price-free", reason:"从实战出发学深度学习"},
+    {name:"Hugging Face Spaces", url:"https://huggingface.co/spaces", desc:"AI 应用托管", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"一键部署 AI Demo"},
     {name:"Prompt Engineering Guide", url:"https://www.promptingguide.ai", desc:"提示词工程指南", price:"免费", priceClass:"price-free", reason:"最全面的提示词教程"},
     {name:"Learn Prompting", url:"https://learnprompting.org", desc:"提示词学习平台", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"互动式学习体验好"},
     {name:"Shubhamsaboo/awesome-llm-apps", url:"https://github.com/Shubhamsaboo/awesome-llm-apps", desc:"100+ 真正能跑的 AI Agent & RAG 应用", price:"+1,278 3次上榜", priceClass:"price-free", reason:"llm-apps"},
     {name:"bojieli/ai-agent-book", url:"https://github.com/bojieli/ai-agent-book", desc:"《深入理解 AI Agent》开源全书", price:"+4,624 首次上榜", priceClass:"price-free", reason:"ai-agent"}
-  ],
-  "🎬 视频生成": [
-    {name:"harry0703/MoneyPrinterTurbo", url:"https://github.com/harry0703/MoneyPrinterTurbo", desc:"AI 短视频生成器", price:"+1,471 2次上榜", priceClass:"price-free", reason:"ai-video"}
   ],
   "👁️ 计算机视觉": [
     {name:"roboflow/supervision", url:"https://github.com/roboflow/supervision", desc:"可复用的 CV 工具库", price:"+735 2次上榜", priceClass:"price-free", reason:"computer-vision"}
   ],
   "💼 求职": [
     {name:"santifer/career-ops", url:"https://github.com/santifer/career-ops", desc:"AI 求职系统", price:"+372 2次上榜", priceClass:"price-free", reason:"ai-agent"},
-    {name:"MadsLorentzen/ai-job-search", url:"https://github.com/MadsLorentzen/ai-job-search", desc:"AI Agent 驱动求职全流程", price:"+3,728 2次上榜", priceClass:"price-free", reason:"ai-agent"}
+    {name:"MadsLorentzen/ai-job-search", url:"https://github.com/MadsLorentzen/ai-job-search", desc:"AI Agent 驱动求职全流程", price:"+3,860 3次上榜", priceClass:"price-free", reason:"ai-agent"}
   ],
-  "📄 OCR": [
-    {name:"PaddlePaddle/PaddleOCR", url:"https://github.com/PaddlePaddle/PaddleOCR", desc:"百度 PaddleOCR", price:"+747 首次上榜", priceClass:"price-free", reason:"ocr"}
+  "📄 OCR 与文档解析": [
+    {name:"PaddlePaddle/PaddleOCR", url:"https://github.com/PaddlePaddle/PaddleOCR", desc:"百度 PaddleOCR", price:"+747 首次上榜", priceClass:"price-free", reason:"ocr"},
+    {name:"microsoft/markitdown", url:"https://github.com/microsoft/markitdown", desc:"微软官方文档转 Markdown 工具", price:"+1,984 2次上榜", priceClass:"price-free", reason:"microsoft"},
+    {name:"run-llama/liteparse", url:"https://github.com/run-llama/liteparse", desc:"LlamaIndex 出品的高性能文档解析器", price:"+701 首次上榜", priceClass:"price-free", reason:"llamaindex"},
+    {name:"opendataloader-project/opendataloader-pdf", url:"https://github.com/opendataloader-project/opendataloader-pdf", desc:"AI 原生的 PDF 解析器", price:"+570 首次上榜", priceClass:"price-free", reason:"pdf-parser"},
+    {name:"opendatalab/MinerU", url:"https://github.com/opendatalab/MinerU", desc:"PDF/Office 转 LLM 数据管道", price:"+749 首次上榜", priceClass:"price-free", reason:"document-processing"}
   ],
   "📦 其他工具": [
     {name:"lfnovo/open-notebook", url:"https://github.com/lfnovo/open-notebook", desc:"NotebookLM 的开源替代", price:"+794 2次上榜", priceClass:"price-free", reason:"notebooklm"},
@@ -304,7 +323,6 @@ var toolsData = {
     {name:"microsoft/VibeVoice", url:"https://github.com/microsoft/VibeVoice", desc:"微软开源的语音 AI", price:"+219 首次上榜", priceClass:"price-free", reason:"voice-ai"},
     {name:"affaan-m/ECC", url:"https://github.com/affaan-m/ECC", desc:"Agent 编排优化系统", price:"+1,750 4次上榜", priceClass:"price-free", reason:"agent-harness"},
     {name:"Open-LLM-VTuber/Open-LLM-VTuber", url:"https://github.com/Open-LLM-VTuber/Open-LLM-VTuber", desc:"与任意 LLM 语音交互", price:"+581 首次上榜", priceClass:"price-free", reason:"voice-assistant"},
-    {name:"opendataloader-project/opendataloader-pdf", url:"https://github.com/opendataloader-project/opendataloader-pdf", desc:"AI 原生的 PDF 解析器", price:"+570 首次上榜", priceClass:"price-free", reason:"pdf-parser"},
     {name:"supermemoryai/supermemory", url:"https://github.com/supermemoryai/supermemory", desc:"AI 时代的记忆引擎", price:"+600 3次上榜", priceClass:"price-free", reason:"memory-engine"},
     {name:"OpenBMB/VoxCPM", url:"https://github.com/OpenBMB/VoxCPM", desc:"清华 OpenBMB 多语言 TTS", price:"+779 3次上榜", priceClass:"price-free", reason:"tts"},
     {name:"TauricResearch/TradingAgents", url:"https://github.com/TauricResearch/TradingAgents", desc:"多 Agent 金融交易框架", price:"+284 首次上榜", priceClass:"price-free", reason:"trading"},
@@ -326,7 +344,7 @@ var toolsData = {
     {name:"Lum1104/Understand-Anything", url:"https://github.com/Lum1104/Understand-Anything", desc:"把代码库变成可视化交互式知识图谱", price:"+1,393 首次上榜", priceClass:"price-free", reason:"knowledge-graph"},
     {name:"ChromeDevTools/chrome-devtools-mcp", url:"https://github.com/ChromeDevTools/chrome-devtools-mcp", desc:"Chrome 官方 MCP 服务器", price:"+501 首次上榜", priceClass:"price-free", reason:"chrome-devtools"},
     {name:"teng-lin/notebooklm-py", url:"https://github.com/teng-lin/notebooklm-py", desc:"Google NotebookLM 的非官方 Python API", price:"+182 首次上榜", priceClass:"price-free", reason:"notebooklm"},
-    {name:"HKUDS/CLI-Anything", url:"https://github.com/HKUDS/CLI-Anything", desc:"让所有软件都拥有 AI Agent 原生接口", price:"+644 3次上榜", priceClass:"price-free", reason:"agent-native"},
+    {name:"HKUDS/CLI-Anything", url:"https://github.com/HKUDS/CLI-Anything", desc:"让所有软件都拥有 AI Agent 原生接口", price:"+607 4次上榜", priceClass:"price-free", reason:"agent-native"},
     {name:"tinyhumansai/openhuman", url:"https://github.com/tinyhumansai/openhuman", desc:"Personal AI super intelligence", price:"+3,394 5次上榜", priceClass:"price-free", reason:"personal-ai"},
     {name:"koala73/worldmonitor", url:"https://github.com/koala73/worldmonitor", desc:"AI 全球情报监控仪表盘", price:"+1,295 首次上榜", priceClass:"price-free", reason:"monitoring"},
     {name:"humanlayer/12-factor-agents", url:"https://github.com/humanlayer/12-factor-agents", desc:"生产级 LLM 应用构建原则", price:"+399 首次上榜", priceClass:"price-free", reason:"production-llm"},
@@ -342,7 +360,7 @@ var toolsData = {
     {name:"decolua/9router", url:"https://github.com/decolua/9router", desc:"免费 AI 编程路由器", price:"+941 首次上榜", priceClass:"price-free", reason:"token-saver"},
     {name:"Datawhale/easy-vibe", url:"https://github.com/datawhalechina/easy-vibe", desc:"Vibe Coding 2026", price:"+812 首次上榜", priceClass:"price-free", reason:"vibe-coding"},
     {name:"LMCache/LMCache", url:"https://github.com/LMCache/LMCache", desc:"LLM KV Cache 加速层", price:"+271 首次上榜", priceClass:"price-free", reason:"llm-inference"},
-    {name:"shiyu-coder/Kronos", url:"https://github.com/shiyu-coder/Kronos", desc:"金融市场基础模型", price:"+395 2次上榜", priceClass:"price-free", reason:"finance-llm"},
+    {name:"shiyu-coder/Kronos", url:"https://github.com/shiyu-coder/Kronos", desc:"金融市场基础模型", price:"+355 3次上榜", priceClass:"price-free", reason:"finance-llm"},
     {name:"MODSetter/SurfSense", url:"https://github.com/MODSetter/SurfSense", desc:"开源 NotebookLM 替代品", price:"+185 首次上榜", priceClass:"price-free", reason:"notebooklm"},
     {name:"shuvonsec/claude-bug-bounty", url:"https://github.com/shuvonsec/claude-bug-bounty", desc:"AI 驱动漏洞赏金猎人", price:"+173 首次上榜", priceClass:"price-free", reason:"security"},
     {name:"DeusData/codebase-memory-mcp", url:"https://github.com/DeusData/codebase-memory-mcp", desc:"高性能代码库记忆 MCP 服务器", price:"+2,162 7次上榜", priceClass:"price-free", reason:"mcp"},
@@ -358,7 +376,6 @@ var toolsData = {
     {name:"JCodesMore/ai-website-cloner-template", url:"https://github.com/JCodesMore/ai-website-cloner-template", desc:"AI 一键克隆任何网站", price:"+750 首次上榜", priceClass:"price-free", reason:"website-cloner"},
     {name:"topoteretes/cognee", url:"https://github.com/topoteretes/cognee", desc:"开源 AI Agent 持久记忆平台", price:"+729 首次上榜", priceClass:"price-free", reason:"agent-memory"},
     {name:"xbtlin/ai-berkshire", url:"https://github.com/xbtlin/ai-berkshire", desc:"Claude Code 价值投资研究框架", price:"+966 3次上榜", priceClass:"price-free", reason:"value-investing"},
-    {name:"opendatalab/MinerU", url:"https://github.com/opendatalab/MinerU", desc:"PDF/Office 转 LLM 数据管道", price:"+749 首次上榜", priceClass:"price-free", reason:"document-processing"},
     {name:"HKUDS/Vibe-Trading", url:"https://github.com/HKUDS/Vibe-Trading", desc:"个人 AI 交易 Agent", price:"+924 5次上榜", priceClass:"price-free", reason:"trading-agent"},
     {name:"kvcache-ai/ktransformers", url:"https://github.com/kvcache-ai/ktransformers", desc:"异构 LLM 推理/微调框架", price:"+448 首次上榜", priceClass:"price-free", reason:"llm-inference"},
     {name:"Robbyant/lingbot-map", url:"https://github.com/Robbyant/lingbot-map", desc:"前馈式 3D 场景重建模型", price:"+831 2次上榜", priceClass:"price-free", reason:"3d-reconstruction"},
@@ -374,9 +391,7 @@ var toolsData = {
     {name:"VoltAgent/awesome-design-md", url:"https://github.com/VoltAgent/awesome-design-md", desc:"54 个品牌 DESIGN.md 合集", price:"+1,569 首次上榜", priceClass:"price-free", reason:"design-systems"}
   ],
   "🔍 向量搜索": [
-    {name:"RyanCodrai/turbovec", url:"https://github.com/RyanCodrai/turbovec", desc:"TurboQuant 向量索引", price:"+1,800 2次上榜", priceClass:"price-free", reason:"vector-database"},
-    {name:"microsoft/markitdown", url:"https://github.com/microsoft/markitdown", desc:"微软官方文档转 Markdown 工具", price:"+1,984 2次上榜", priceClass:"price-free", reason:"microsoft"},
-    {name:"run-llama/liteparse", url:"https://github.com/run-llama/liteparse", desc:"LlamaIndex 出品的高性能文档解析器", price:"+701 首次上榜", priceClass:"price-free", reason:"llamaindex"}
+    {name:"RyanCodrai/turbovec", url:"https://github.com/RyanCodrai/turbovec", desc:"TurboQuant 向量索引", price:"+1,800 2次上榜", priceClass:"price-free", reason:"vector-database"}
   ],
   "🖥️ AI UI": [
     {name:"CopilotKit/CopilotKit", url:"https://github.com/CopilotKit/CopilotKit", desc:"Agent UI 前端框架", price:"+631 2次上榜", priceClass:"price-free", reason:"agent-ui"}
@@ -384,7 +399,7 @@ var toolsData = {
   "🤖 AI Agent": [
     {name:"Panniantong/Agent-Reach", url:"https://github.com/Panniantong/Agent-Reach", desc:"Agent 全网浏览器", price:"+961 3次上榜", priceClass:"price-free", reason:"agent-tools"},
     {name:"aaif-goose/goose", url:"https://github.com/aaif-goose/goose", desc:"开源可扩展 AI Agent", price:"+699 首次上榜", priceClass:"price-free", reason:"ai-agent"},
-    {name:"chopratejas/headroom", url:"https://github.com/chopratejas/headroom", desc:"Token 压缩引擎", price:"+2,617 5次上榜", priceClass:"price-free", reason:"token-compression"},
+    {name:"headroomlabs-ai/headroom", url:"https://github.com/headroomlabs-ai/headroom", desc:"压缩工具输出/日志/RAG 片段，显著节省 Token", price:"+317 6次上榜", priceClass:"price-free", reason:"token-compression"},
     {name:"NousResearch/hermes-agent", url:"https://github.com/NousResearch/hermes-agent", desc:"Hermes Agent", price:"+1,913 3次上榜", priceClass:"price-free", reason:"hermes-agent"},
     {name:"nesquena/hermes-webui", url:"https://github.com/nesquena/hermes-webui", desc:"Hermes Agent 的 Web 界面", price:"+1,725 2次上榜", priceClass:"price-free", reason:"hermes-agent"},
     {name:"dmtrKovalenko/fff", url:"https://github.com/dmtrKovalenko/fff", desc:"最快的文件搜索工具", price:"+121 首次上榜", priceClass:"price-free", reason:"file-search"},
@@ -400,6 +415,10 @@ var toolsData = {
     {name:"openai/codex-plugin-cc", url:"https://github.com/openai/codex-plugin-cc", desc:"在 Claude Code 中用 Codex 审查代码", price:"+910 首次上榜", priceClass:"price-free", reason:"agent-interop"},
     {name:"1jehuang/jcode", url:"https://github.com/1jehuang/jcode", desc:"最智能的编码 Agent 工具链", price:"+843 首次上榜", priceClass:"price-free", reason:"coding-agent"},
     {name:"AstrBotDevs/AstrBot", url:"https://github.com/AstrBotDevs/AstrBot", desc:"AI Agent 多平台开发框架", price:"+416 首次上榜", priceClass:"price-free", reason:"agent-framework"},
+    {name:"anomalyco/opencode", url:"https://github.com/anomalyco/opencode", desc:"开源编码 Agent", price:"+1,310 首次上榜", priceClass:"price-free", reason:"coding-agent"},
+    {name:"stablyai/orca", url:"https://github.com/stablyai/orca", desc:"多 Agent 舰队管理与编排", price:"+1,591 首次上榜", priceClass:"price-free", reason:"agent-orchestration"},
+    {name:"akitaonrails/ai-memory", url:"https://github.com/akitaonrails/ai-memory", desc:"编码 CLI 的长期记忆与跨厂商交接", price:"+666 首次上榜", priceClass:"price-free", reason:"agent-memory"},
+    {name:"ruvnet/ruflo", url:"https://github.com/ruvnet/ruflo", desc:"多 Agent 蜂群编排与自适应记忆", price:"+564 首次上榜", priceClass:"price-free", reason:"agent-harness"},
     {name:"Dicklesworthstone/destructive_command_guard", url:"https://github.com/Dicklesworthstone/destructive_command_guard", desc:"阻止 Agent 执行危险命令", price:"+1,290 首次上榜", priceClass:"price-free", reason:"agent-safety"}
   ],
   "🧩 Agent Skills": [
@@ -426,6 +445,7 @@ var toolsData = {
 
 var currentCat = 'all';
 var currentSearch = '';
+var DATA_UPDATED = '2026-10-19';
 
 function renderTools() {
   var container = document.getElementById('toolsContainer');
@@ -453,7 +473,7 @@ function renderTools() {
 
     filtered.forEach(function(t) {
       html += '<div class="tool-card">';
-      html += '<div><a href="' + t.url + '" class="tool-name" target="_blank">' + t.name + '</a>';
+      html += '<div><a href="' + t.url + '" class="tool-name" target="_blank" rel="noopener noreferrer">' + t.name + '</a>';
       html += '<div class="tool-desc">' + t.desc + '</div></div>';
       html += '<span class="tool-price ' + t.priceClass + '">' + t.price + '</span>';
       html += '<span class="tool-reason">' + t.reason + '</span>';
@@ -476,6 +496,11 @@ function updateNavCounts() {
   for (var cat in toolsData) { allCount += toolsData[cat].length; }
   var btns = document.querySelectorAll('.cat-btn');
   btns[0].textContent = '全部 (' + allCount + ')';
+  var i = 1;
+  for (var cat in toolsData) {
+    if (btns[i]) btns[i].textContent = cat + ' (' + toolsData[cat].length + ')';
+    i++;
+  }
 }
 
 function filterByCat(cat) {
@@ -491,6 +516,8 @@ function filterTools() {
 
 // Init nav
 (function() {
+  document.getElementById('heroDate').textContent = DATA_UPDATED;
+  document.getElementById('dataDate').textContent = DATA_UPDATED;
   var nav = document.getElementById('catNav');
   for (var cat in toolsData) {
     var btn = document.createElement('button');
