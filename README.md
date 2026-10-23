@@ -73,6 +73,8 @@
 | [Leonardo.ai](https://leonardo.ai) | 游戏资产生成 | 免费 / Pro $12/月 | 游戏素材+模型训练 |
 | [Flux](https://blackforestlabs.ai) | Black Forest Labs 图像生成模型 | 免费 / Pro 付费 | 速度最快的生成模型之一 |
 | [即梦](https://jimeng.jianying.com) | 字节跳动 AI 绘图 | 免费 | 中文友好，质量不错 |
+| [PromptImage](https://promptimage.cloud) | 免费 AI 图片展馆 + 多模型图/视频工作室 | 免费积分 / 付费加购 | 提示词库一键带入，无需绑卡 |
+| [TeslaWraps](https://teslawraps.design) | 浏览器端特斯拉车衣/贴膜设计（3D 预览、PNG 导出） | 核心编辑免费 / AI 可选 | 按车型模板设计，不强制付费 |
 
 ## 🎬 视频制作
 
@@ -84,6 +86,7 @@
 | [剪映](https://jianying.com) | 字节跳动视频剪辑 | 免费 | AI 功能丰富，中文用户首选 |
 | [HeyGen](https://www.heygen.com) | AI 数字人视频 | 免费 / Creator $29/月 | 数字人效果最真实 |
 | [Kling AI](https://klingai.com) | 可灵 AI 视频与图像生成 | 免费额度 / 付费套餐 | 动作与镜头控制自然 |
+| [GrokVideo Studio](https://grokvideogenerator.dev) | 独立文生/图生视频工具（非 xAI/X 官方） | 免费试用积分 | 基于 Grok Imagine API，免 X 账号 |
 
 ## 🎵 音频与音乐
 
