@@ -87,6 +87,9 @@
 | [HeyGen](https://www.heygen.com) | AI 数字人视频 | 免费 / Creator $29/月 | 数字人效果最真实 |
 | [Kling AI](https://klingai.com) | 可灵 AI 视频与图像生成 | 免费额度 / 付费套餐 | 动作与镜头控制自然 |
 | [GrokVideo Studio](https://grokvideogenerator.dev) | 独立文生/图生视频工具（非 xAI/X 官方） | 免费试用积分 | 基于 Grok Imagine API，免 X 账号 |
+| [KDA Firestarter AI Dance](https://kdafirestarterai.dev) | 独立非官方：一张照片生成 13 秒 480p 21:9 独舞视频；一次性付费起 $7.99，不隶属 Riot/KDA | 付费（$7.99 起） | 照片生成独舞特效，独立非官方 |
+| [A2O LITE NEON AI Dance](https://a2oliteai.org) | 独立工具：两张照片生成 15 秒 480p 16:9 双人霓虹舞视频（含参考音轨）；一次性付费起 $7.99 | 付费（$7.99 起） | 双人舞视频含参考音轨，独立非官方 |
+| [dime dime baby ai](https://dimedimebabyai.dev) | 独立工具：一张照片生成约 5 秒 480p 9:16 舞蹈视频（Quince Classic / Party Groove）；一次性付费起 $7.99 | 付费（$7.99 起） | 竖屏派对舞特效，独立工具 |
 | [Alors On Danse Video Maker](https://alorsondansevideo.com) | 独立 AI 视频工具：两张人像照生成 13 秒 480p 双人摄影棚舞蹈短片；纯付费，非官方 | 付费 | 两张照片即可生成，无需提示词与拍摄 |
 | [Bad Times AI](https://badtimesai.dev) | 独立 AI 工具：从照片合成跳舞特效视频；一次性付费起 $7.99，非官方 | 付费（$7.99 起） | 照片生成跳舞特效，独立非官方 |
 | [I Found You in the Crowd AI](https://ifoundyouinthecrowdai.com) | 独立 AI 工具：从照片合成人群中相遇特效视频；付费起 $7.99，非官方 | 付费（$7.99 起） | 照片生成相遇特效，独立非官方 |
