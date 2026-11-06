@@ -3,7 +3,7 @@
 > 猿来AI 精选 · 好用的亲自用过 · 热门项目持续追踪
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--19-orange)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--06-orange)
 
 **一只想让人人秒懂AI的猿，帮你筛选真正好用的 AI 工具。**
 
@@ -117,6 +117,7 @@
 | [Gamma](https://gamma.app) | AI 生成演示文稿 | 免费 / Pro $10/月 | PPT/文档/网页一键生成 |
 | [Napkin](https://napkin.ai) | AI 图表生成 | 免费 / Pro 付费 | 文字转信息图，极简好用 |
 | [Perplexity](https://www.perplexity.ai) | AI 搜索引擎 | 免费 / Pro $20/月 | 带引用来源的深度搜索 |
+| [证伪AI / DisconfirmAI](https://disconfirmai.com/zh) | 面向 AI 时代的投资研究与阅读平台，先找反面证据再建确信 | 公开阅读免费 / 部分能力需登录 | 公开信源阅读、研究报告、雷达扫描、个人投资框架 |
 | [NotebookLM](https://notebooklm.google.com) | Google AI 笔记本 | 免费 | 文档分析+播客生成 |
 | [Manus](https://manus.im) | 通用 AI Agent，自动完成研究与办公任务 | 免费额度 / Pro 付费 | 端到端任务执行，少人工接管 |
 | [Otter.ai](https://otter.ai) | AI 会议记录 | 免费 / Pro $17/月 | 实时转录，自动笔记 |
