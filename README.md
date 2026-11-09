@@ -84,6 +84,8 @@
 | [剪映](https://jianying.com) | 字节跳动视频剪辑 | 免费 | AI 功能丰富，中文用户首选 |
 | [HeyGen](https://www.heygen.com) | AI 数字人视频 | 免费 / Creator $29/月 | 数字人效果最真实 |
 | [Kling AI](https://klingai.com) | 可灵 AI 视频与图像生成 | 免费额度 / 付费套餐 | 动作与镜头控制自然 |
+| [Cyanvid](https://cyanvid.com/?utm_source=yuanlaiai-awesome-ai-tools&utm_medium=directory&utm_campaign=backlinks) | 从文本或图片生成 AI 视频；生成前显示积分报价 | 欢迎积分 / 付费订阅 | 文生视频与图生视频 |
+| [Barz Studio](https://barzvideo.com/?utm_source=yuanlaiai-awesome-ai-tools&utm_medium=directory&utm_campaign=backlinks) | 免费浏览器说唱歌词视频工具；节拍驱动字幕，导出 9:16 WebM | 免费 | 歌词字幕与竖屏视频 |
 
 ## 🎵 音频与音乐
 
