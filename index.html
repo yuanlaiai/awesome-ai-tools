@@ -241,7 +241,9 @@ var toolsData = {
     {name:"Grammarly", url:"https://www.grammarly.com", desc:"英文写作校对增强", price:"免费 / Premium $12/月", priceClass:"price-free-paid", reason:"最专业的英文写作助手"},
     {name:"DeepL Write", url:"https://www.deepl.com/write", desc:"AI 英文润色与改写", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"非母语写作润色自然"},
     {name:"Jasper", url:"https://www.jasper.ai", desc:"营销文案生成", price:"Creator $49/月", priceClass:"price-paid", reason:"品牌声音一致性好"},
-    {name:"秘塔写作猫", url:"https://xiezuocat.com", desc:"中文写作辅助", price:"免费 / Pro ￥99/年", priceClass:"price-free-paid", reason:"中文语法校对优秀"}
+    {name:"秘塔写作猫", url:"https://xiezuocat.com", desc:"中文写作辅助", price:"免费 / Pro ￥99/年", priceClass:"price-free-paid", reason:"中文语法校对优秀"},
+
+    {name:"google-research/paper-orchestra", url:"https://github.com/google-research/paper-orchestra", desc:"多 Agent 论文流水线：实验日志直出 LaTeX 稿", price:"+454 2次上榜", priceClass:"price-free", reason:"academic-writing"}
   ],
   "🎨 图像生成": [
     {name:"Midjourney", url:"https://www.midjourney.com", desc:"顶级 AI 图像生成", price:"Basic $10/月", priceClass:"price-paid", reason:"艺术性最强，风格多样"},
@@ -259,7 +261,10 @@ var toolsData = {
     {name:"剪映", url:"https://jianying.com", desc:"字节跳动视频剪辑", price:"免费", priceClass:"price-free", reason:"AI 功能丰富，中文首选"},
     {name:"HeyGen", url:"https://www.heygen.com", desc:"AI 数字人视频", price:"免费 / Creator $29/月", priceClass:"price-free-paid", reason:"数字人效果最真实"},
     {name:"Kling AI", url:"https://klingai.com", desc:"可灵 AI 视频与图像生成", price:"免费额度 / 付费套餐", priceClass:"price-free-paid", reason:"动作与镜头控制自然"},
-    {name:"harry0703/MoneyPrinterTurbo", url:"https://github.com/harry0703/MoneyPrinterTurbo", desc:"AI 短视频生成器", price:"+1,471 2次上榜", priceClass:"price-free", reason:"ai-video"}
+    {name:"harry0703/MoneyPrinterTurbo", url:"https://github.com/harry0703/MoneyPrinterTurbo", desc:"AI 短视频生成器", price:"+1,471 2次上榜", priceClass:"price-free", reason:"ai-video"},
+
+    {name:"zhouxiaoka/autoclip", url:"https://github.com/zhouxiaoka/autoclip", desc:"贴链接一键出片，本地剪竖屏短视频加字幕封面", price:"+979 2次上榜", priceClass:"price-free", reason:"video-editing"},
+    {name:"FlashML-org/FreeVideo", url:"https://github.com/FlashML-org/FreeVideo", desc:"8GB 显存本地跑 MiniMax H3 生视频", price:"+293 首次上榜", priceClass:"price-free", reason:"local-video-gen"}
   ],
   "🎵 音频与音乐": [
     {name:"ElevenLabs", url:"https://elevenlabs.io", desc:"顶级 AI 语音合成", price:"免费 / Starter $5/月", priceClass:"price-free-paid", reason:"声音最自然，情感丰富"},
@@ -307,7 +312,9 @@ var toolsData = {
     {name:"Prompt Engineering Guide", url:"https://www.promptingguide.ai", desc:"提示词工程指南", price:"免费", priceClass:"price-free", reason:"最全面的提示词教程"},
     {name:"Learn Prompting", url:"https://learnprompting.org", desc:"提示词学习平台", price:"免费 / Pro 付费", priceClass:"price-free-paid", reason:"互动式学习体验好"},
     {name:"Shubhamsaboo/awesome-llm-apps", url:"https://github.com/Shubhamsaboo/awesome-llm-apps", desc:"100+ 真正能跑的 AI Agent & RAG 应用", price:"+1,278 3次上榜", priceClass:"price-free", reason:"llm-apps"},
-    {name:"bojieli/ai-agent-book", url:"https://github.com/bojieli/ai-agent-book", desc:"《深入理解 AI Agent》开源全书", price:"+4,624 首次上榜", priceClass:"price-free", reason:"ai-agent"}
+    {name:"bojieli/ai-agent-book", url:"https://github.com/bojieli/ai-agent-book", desc:"《深入理解 AI Agent》开源全书", price:"+4,624 首次上榜", priceClass:"price-free", reason:"ai-agent"},
+
+    {name:"jingyaogong/minimind", url:"https://github.com/jingyaogong/minimind", desc:"3 块钱 2 小时从零训出 64M 小模型", price:"+847 3次上榜", priceClass:"price-free", reason:"llm-training"}
   ],
   "👁️ 计算机视觉": [
     {name:"roboflow/supervision", url:"https://github.com/roboflow/supervision", desc:"可复用的 CV 工具库", price:"+735 2次上榜", priceClass:"price-free", reason:"computer-vision"}
@@ -350,7 +357,7 @@ var toolsData = {
     {name:"Lum1104/Understand-Anything", url:"https://github.com/Lum1104/Understand-Anything", desc:"把代码库变成可视化交互式知识图谱", price:"+1,393 首次上榜", priceClass:"price-free", reason:"knowledge-graph"},
     {name:"ChromeDevTools/chrome-devtools-mcp", url:"https://github.com/ChromeDevTools/chrome-devtools-mcp", desc:"Chrome 官方 MCP 服务器", price:"+501 首次上榜", priceClass:"price-free", reason:"chrome-devtools"},
     {name:"teng-lin/notebooklm-py", url:"https://github.com/teng-lin/notebooklm-py", desc:"Google NotebookLM 的非官方 Python API", price:"+182 首次上榜", priceClass:"price-free", reason:"notebooklm"},
-    {name:"HKUDS/CLI-Anything", url:"https://github.com/HKUDS/CLI-Anything", desc:"让所有软件都拥有 AI Agent 原生接口", price:"+607 4次上榜", priceClass:"price-free", reason:"agent-native"},
+    {name:"HKUDS/CLI-Anything", url:"https://github.com/HKUDS/CLI-Anything", desc:"让所有软件都拥有 AI Agent 原生接口", price:"+773 8次上榜", priceClass:"price-free", reason:"agent-native"},
     {name:"tinyhumansai/openhuman", url:"https://github.com/tinyhumansai/openhuman", desc:"Personal AI super intelligence", price:"+3,394 5次上榜", priceClass:"price-free", reason:"personal-ai"},
     {name:"koala73/worldmonitor", url:"https://github.com/koala73/worldmonitor", desc:"AI 全球情报监控仪表盘", price:"+1,295 首次上榜", priceClass:"price-free", reason:"monitoring"},
     {name:"humanlayer/12-factor-agents", url:"https://github.com/humanlayer/12-factor-agents", desc:"生产级 LLM 应用构建原则", price:"+399 首次上榜", priceClass:"price-free", reason:"production-llm"},
@@ -394,7 +401,9 @@ var toolsData = {
     {name:"JuliusBrussee/caveman", url:"https://github.com/JuliusBrussee/caveman", desc:"Claude Code 野人语 Token 节省技能", price:"+1,089 2次上榜", priceClass:"price-free", reason:"token-saving"},
     {name:"Zackriya-Solutions/meetily", url:"https://github.com/Zackriya-Solutions/meetily", desc:"本地 AI 会议助手 (Rust + Ollama)", price:"+2,493 首次上榜", priceClass:"price-free", reason:"meeting-assistant"},
     {name:"asgeirtj/system_prompts_leaks", url:"https://github.com/asgeirtj/system_prompts_leaks", desc:"AI 厂商系统提示词大公开", price:"+1,135 3次上榜", priceClass:"price-free", reason:"system-prompts"},
-    {name:"VoltAgent/awesome-design-md", url:"https://github.com/VoltAgent/awesome-design-md", desc:"54 个品牌 DESIGN.md 合集", price:"+1,569 首次上榜", priceClass:"price-free", reason:"design-systems"}
+    {name:"VoltAgent/awesome-design-md", url:"https://github.com/VoltAgent/awesome-design-md", desc:"54 个品牌 DESIGN.md 合集", price:"+1,569 首次上榜", priceClass:"price-free", reason:"design-systems"},
+
+    {name:"firecrawl/firecrawl", url:"https://github.com/firecrawl/firecrawl", desc:"网页转 Markdown 的抓取基建，550+ 站点开箱可用", price:"+1,241 首次上榜", priceClass:"price-free", reason:"crawler"}
   ],
   "🔍 向量搜索": [
     {name:"RyanCodrai/turbovec", url:"https://github.com/RyanCodrai/turbovec", desc:"TurboQuant 向量索引", price:"+1,800 2次上榜", priceClass:"price-free", reason:"vector-database"}
@@ -425,11 +434,13 @@ var toolsData = {
     {name:"stablyai/orca", url:"https://github.com/stablyai/orca", desc:"多 Agent 舰队管理与编排", price:"+1,591 首次上榜", priceClass:"price-free", reason:"agent-orchestration"},
     {name:"akitaonrails/ai-memory", url:"https://github.com/akitaonrails/ai-memory", desc:"编码 CLI 的长期记忆与跨厂商交接", price:"+666 首次上榜", priceClass:"price-free", reason:"agent-memory"},
     {name:"ruvnet/ruflo", url:"https://github.com/ruvnet/ruflo", desc:"多 Agent 蜂群编排与自适应记忆", price:"+564 首次上榜", priceClass:"price-free", reason:"agent-harness"},
-    {name:"Dicklesworthstone/destructive_command_guard", url:"https://github.com/Dicklesworthstone/destructive_command_guard", desc:"阻止 Agent 执行危险命令", price:"+1,290 首次上榜", priceClass:"price-free", reason:"agent-safety"}
+    {name:"Dicklesworthstone/destructive_command_guard", url:"https://github.com/Dicklesworthstone/destructive_command_guard", desc:"阻止 Agent 执行危险命令", price:"+1,290 首次上榜", priceClass:"price-free", reason:"agent-safety"},
+
+    {name:"Tracer-Cloud/opensre", url:"https://github.com/Tracer-Cloud/opensre", desc:"CI 排障 Agent：读失败 run、追根因、给补丁", price:"+466 首次上榜", priceClass:"price-free", reason:"ci-agent"}
   ],
   "🧩 Agent Skills": [
-    {name:"mvanhorn/last30days-skill", url:"https://github.com/mvanhorn/last30days-skill", desc:"AI Agent 全网研究技能", price:"+2,561 3次上榜", priceClass:"price-free", reason:"agent-skills"},
-    {name:"obra/superpowers", url:"https://github.com/obra/superpowers", desc:"Agent 技能框架与开发方法论", price:"+897 12次上榜", priceClass:"price-free", reason:"agent-skills"},
+    {name:"mvanhorn/last30days-skill", url:"https://github.com/mvanhorn/last30days-skill", desc:"AI Agent 全网研究技能", price:"+681 5次上榜", priceClass:"price-free", reason:"agent-skills"},
+    {name:"obra/superpowers", url:"https://github.com/obra/superpowers", desc:"Agent 技能框架与开发方法论", price:"+890 23次上榜", priceClass:"price-free", reason:"agent-skills"},
     {name:"addyosmani/agent-skills", url:"https://github.com/addyosmani/agent-skills", desc:"生产级 Agent 工程技能", price:"+2,582 4次上榜", priceClass:"price-free", reason:"agent-skills"},
     {name:"phuryn/pm-skills", url:"https://github.com/phuryn/pm-skills", desc:"100+ PM Agent 技能市场", price:"+775 2次上榜", priceClass:"price-free", reason:"agent-skills"},
     {name:"pbakaus/impeccable", url:"https://github.com/pbakaus/impeccable", desc:"AI Agent 设计语言", price:"+317 首次上榜", priceClass:"price-free", reason:"design-language"},
@@ -445,13 +456,18 @@ var toolsData = {
     {name:"ogulcancelik/herdr", url:"https://github.com/ogulcancelik/herdr", desc:"终端 AI Agent 多路复用器", price:"+706 首次上榜", priceClass:"price-free", reason:"agent-multiplexer"},
     {name:"Graphify-Labs/graphify", url:"https://github.com/Graphify-Labs/graphify", desc:"文件夹→可查询知识图谱", price:"+1,641 3次上榜", priceClass:"price-free", reason:"knowledge-graph"},
     {name:"Nutlope/hallmark", url:"https://github.com/Nutlope/hallmark", desc:"反 AI Slop 标志性设计 Skill", price:"+1,119 3次上榜", priceClass:"price-free", reason:"design"},
-    {name:"ayghri/i-have-adhd", url:"https://github.com/ayghri/i-have-adhd", desc:"让编码 Agent 输出简洁直接", price:"+1,866 首次上榜", priceClass:"price-free", reason:"agent-skills"}
+    {name:"ayghri/i-have-adhd", url:"https://github.com/ayghri/i-have-adhd", desc:"让编码 Agent 输出简洁直接", price:"+1,866 首次上榜", priceClass:"price-free", reason:"agent-skills"},
+
+    {name:"elementalsouls/Claude-BugHunter", url:"https://github.com/elementalsouls/Claude-BugHunter", desc:"83 个渗透测试技能，681 份 HackerOne 报告拆解", price:"+1,622 3次上榜", priceClass:"price-free", reason:"security"},
+    {name:"mjmirza/app-store-compliance", url:"https://github.com/mjmirza/app-store-compliance", desc:"App Store/Google Play 拒审清单 + 提交前 guard", price:"+869 首次上榜", priceClass:"price-free", reason:"compliance"},
+    {name:"cathrynlavery/diagram-design", url:"https://github.com/cathrynlavery/diagram-design", desc:"51 种架构图，单文件 HTML+SVG 不画 Mermaid", price:"+636 8次上榜", priceClass:"price-free", reason:"diagram"},
+    {name:"google-labs-code/stitch-skills", url:"https://github.com/google-labs-code/stitch-skills", desc:"Google Stitch 官方技能：设计稿直接落成代码", price:"+315 3次上榜", priceClass:"price-free", reason:"ui-design"}
   ]
 };
 
 var currentCat = 'all';
 var currentSearch = '';
-var DATA_UPDATED = '2026-10-19';
+var DATA_UPDATED = '2026-11-21';
 
 function renderTools() {
   var container = document.getElementById('toolsContainer');

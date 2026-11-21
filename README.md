@@ -27,14 +27,15 @@
 
 ---
 
-## 🔥 最新收录（2026-10-19）
+## 🔥 最新收录（2026-11-21）
 
 | 项目 | 说明 | 今日新增 Star |
 |------|------|---------------|
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 开源编码 Agent | +1,310 |
-| [stablyai/orca](https://github.com/stablyai/orca) | 多 Agent 舰队管理与编排 | +1,591 |
-| [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 编码 CLI 的长期记忆与跨厂商交接 | +666 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 多 Agent 蜂群编排与自适应记忆 | +564 |
+| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 83 个渗透测试技能，681 份 HackerOne 报告拆解 | +1,622 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 网页转 Markdown 的抓取基建 | +1,241 |
+| [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | 贴链接一键出片，本地剪竖屏短视频 | +979 |
+| [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | App Store 拒审清单 + 提交前 guard | +869 |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 3 块钱 2 小时从零训出 64M 小模型 | +847 |
 
 ---
 
@@ -84,6 +85,8 @@
 | [剪映](https://jianying.com) | 字节跳动视频剪辑 | 免费 | AI 功能丰富，中文用户首选 |
 | [HeyGen](https://www.heygen.com) | AI 数字人视频 | 免费 / Creator $29/月 | 数字人效果最真实 |
 | [Kling AI](https://klingai.com) | 可灵 AI 视频与图像生成 | 免费额度 / 付费套餐 | 动作与镜头控制自然 |
+| [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | 贴链接一键出片，本地剪竖屏短视频 | 免费（云端模型按量） | 长视频自动切片+字幕封面 |
+| [FlashML-org/FreeVideo](https://github.com/FlashML-org/FreeVideo) | 8GB 显存本地跑 MiniMax H3 | 免费开源 | 本地生视频，素材不出门 |
 
 ## 🎵 音频与音乐
 
@@ -132,6 +135,7 @@
 | [DeepLearning.AI](https://www.deeplearning.ai) | 吴恩达团队 AI 课程平台 | 免费课程 / 付费专项 | 体系完整，适合系统入门 |
 | [Prompt Engineering Guide](https://www.promptingguide.ai) | 提示词工程指南 | 免费 | 最全面的提示词教程 |
 | [Learn Prompting](https://learnprompting.org) | 提示词学习平台 | 免费 / Pro 付费 | 互动式学习体验好 |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 从零训练 64M 小模型教程 | 免费开源 | 单卡可跑，RLHF 全链路 |
 
 ## 🔧 其他实用工具
 
@@ -142,15 +146,17 @@
 | [Make](https://www.make.com) | 可视化自动化平台 | 免费 / Pro $9/月 | 比 Zapier 更灵活 |
 | [Hugging Face Spaces](https://huggingface.co/spaces) | AI 应用托管 | 免费 / Pro 付费 | 一键部署 AI Demo |
 | [Replicate](https://replicate.com) | 云端 AI 模型 API | 按量付费 | 最易用的模型 API |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 网页转 Markdown 抓取基建 | 自托管免费 / 云 API 按量 | 550+ 站点开箱可用 |
+| [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | CI 排障 Agent | 免费开源 | 读失败日志、追根因、给补丁 |
 
 ---
 
 ## 📊 数据统计
 
-- **精选工具**: 60 款 + 最新趋势 4 个（本页）
-- **网页收录**: 189 个（含 129 个 GitHub 热门项目）
+- **精选工具**: 66 款 + 最新趋势 5 个（本页）
+- **网页收录**: 199 个（含 139 个 GitHub 热门项目）
 - **覆盖分类**: 16 大类
-- **数据更新**: 2026-10-19
+- **数据更新**: 2026-11-21
 
 ## 🤝 贡献指南
 
