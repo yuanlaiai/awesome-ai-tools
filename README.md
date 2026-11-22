@@ -27,15 +27,15 @@
 
 ---
 
-## 🔥 最新收录（2026-11-21）
+## 🔥 最新收录（2026-11-22）
 
 | 项目 | 说明 | 今日新增 Star |
 |------|------|---------------|
-| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 83 个渗透测试技能，681 份 HackerOne 报告拆解 | +1,622 |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 网页转 Markdown 的抓取基建 | +1,241 |
-| [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | 贴链接一键出片，本地剪竖屏短视频 | +979 |
-| [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | App Store 拒审清单 + 提交前 guard | +869 |
-| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 3 块钱 2 小时从零训出 64M 小模型 | +847 |
+| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 渗透测试技能包，连续两天各涨 1,600+ | +1,803 |
+| [cursor/plugins](https://github.com/cursor/plugins) | Cursor 官方插件规范与插件集 | +260 |
+| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | 英特尔推理部署工具包，CPU/核显/NPU | +200 |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 文档转 Markdown，结构完整喂给 LLM | +182 |
+| [github/spec-kit](https://github.com/github/spec-kit) | 规格驱动开发：先写规格再实现 | +126 |
 
 ---
 
@@ -112,6 +112,7 @@
 | [Replit Agent](https://replit.com) | 浏览器 IDE + Agent | 免费 / Pro $25/月 | 零配置，浏览器即开发环境 |
 | [Cursor](https://cursor.com) | 老牌 AI IDE，图形化工作流 | 免费 / Pro $20/月 | 适合习惯 IDE 界面的用户，非首选 |
 | [通义灵码](https://tongyi.aliyun.com/lingma) | 阿里 AI 编程助手 | 免费 | 中文友好，国产优秀 |
+| [github/spec-kit](https://github.com/github/spec-kit) | 规格驱动开发工具包 | 免费开源 | 先写规格，再让 agent 实现 |
 
 ## 📊 办公与效率
 
@@ -148,15 +149,17 @@
 | [Replicate](https://replicate.com) | 云端 AI 模型 API | 按量付费 | 最易用的模型 API |
 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 网页转 Markdown 抓取基建 | 自托管免费 / 云 API 按量 | 550+ 站点开箱可用 |
 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | CI 排障 Agent | 免费开源 | 读失败日志、追根因、给补丁 |
+| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | 推理部署工具包 | 免费开源 | CPU/核显/NPU 都能跑 |
+| [phone-harness/phone-harness](https://github.com/phone-harness/phone-harness) | 让 agent 操作手机 | 免费开源 | iPhone 镜像 OCR / 安卓 adb |
 
 ---
 
 ## 📊 数据统计
 
-- **精选工具**: 66 款 + 最新趋势 5 个（本页）
-- **网页收录**: 199 个（含 139 个 GitHub 热门项目）
+- **精选工具**: 69 款 + 最新趋势 5 个（本页）
+- **网页收录**: 202 个（含 142 个 GitHub 热门项目）
 - **覆盖分类**: 16 大类
-- **数据更新**: 2026-11-21
+- **数据更新**: 2026-11-22
 
 ## 🤝 贡献指南
 
