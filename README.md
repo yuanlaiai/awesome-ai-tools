@@ -27,15 +27,15 @@
 
 ---
 
-## 🔥 最新收录（2026-11-22）
+## 🔥 最新收录（2026-11-23）
 
 | 项目 | 说明 | 今日新增 Star |
 |------|------|---------------|
-| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 渗透测试技能包，连续两天各涨 1,600+ | +1,803 |
-| [cursor/plugins](https://github.com/cursor/plugins) | Cursor 官方插件规范与插件集 | +260 |
-| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | 英特尔推理部署工具包，CPU/核显/NPU | +200 |
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 文档转 Markdown，结构完整喂给 LLM | +182 |
-| [github/spec-kit](https://github.com/github/spec-kit) | 规格驱动开发：先写规格再实现 | +126 |
+| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 渗透测试技能包，三连日增递增 | +2,037 |
+| [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | 贴链接一键出片，本地剪竖屏短视频 | +908 |
+| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 3 块钱 2 小时从零训出 64M 小模型 | +828 |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 跨平台近 30 天讨论简报 | +790 |
+| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 51 种架构图，单文件 HTML+SVG | +624 |
 
 ---
 
@@ -159,7 +159,7 @@
 - **精选工具**: 69 款 + 最新趋势 5 个（本页）
 - **网页收录**: 202 个（含 142 个 GitHub 热门项目）
 - **覆盖分类**: 16 大类
-- **数据更新**: 2026-11-22
+- **数据更新**: 2026-11-23
 
 ## 🤝 贡献指南
 
