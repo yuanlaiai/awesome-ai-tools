@@ -27,15 +27,15 @@
 
 ---
 
-## 🔥 最新收录（2026-11-23）
+## 🔥 最新收录（2026-11-24）
 
 | 项目 | 说明 | 今日新增 Star |
 |------|------|---------------|
-| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 渗透测试技能包，三连日增递增 | +2,037 |
-| [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | 贴链接一键出片，本地剪竖屏短视频 | +908 |
-| [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | 3 块钱 2 小时从零训出 64M 小模型 | +828 |
-| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 跨平台近 30 天讨论简报 | +790 |
-| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 51 种架构图，单文件 HTML+SVG | +624 |
+| [cursor/plugins](https://github.com/cursor/plugins) | Cursor 官方插件仓库，SaaS 集成带 manifest 上架 | +359 |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 微软官方文档转 Markdown，喂 RAG 前先洗数据 | +246 |
+| [google-research/paper-orchestra](https://github.com/google-research/paper-orchestra) | Google 多 Agent 论文流水线，直出 LaTeX 稿 | +241 |
+| [p-e-w/heretic](https://github.com/p-e-w/heretic) | 白盒「消磁」，训练无关地改模型行为 | +194 |
+| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | 英特尔推理部署工具包，CPU/核显/NPU 都能跑 | +187 |
 
 ---
 
@@ -159,7 +159,7 @@
 - **精选工具**: 69 款 + 最新趋势 5 个（本页）
 - **网页收录**: 202 个（含 142 个 GitHub 热门项目）
 - **覆盖分类**: 16 大类
-- **数据更新**: 2026-11-23
+- **数据更新**: 2026-11-24
 
 ## 🤝 贡献指南
 
