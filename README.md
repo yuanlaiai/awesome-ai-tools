@@ -27,15 +27,15 @@
 
 ---
 
-## 🔥 最新收录（2026-11-24）
+## 🔥 最新收录（2026-11-27）
 
 | 项目 | 说明 | 今日新增 Star |
 |------|------|---------------|
-| [cursor/plugins](https://github.com/cursor/plugins) | Cursor 官方插件仓库，SaaS 集成带 manifest 上架 | +359 |
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 微软官方文档转 Markdown，喂 RAG 前先洗数据 | +246 |
-| [google-research/paper-orchestra](https://github.com/google-research/paper-orchestra) | Google 多 Agent 论文流水线，直出 LaTeX 稿 | +241 |
-| [p-e-w/heretic](https://github.com/p-e-w/heretic) | 白盒「消磁」，训练无关地改模型行为 | +194 |
-| [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | 英特尔推理部署工具包，CPU/核显/NPU 都能跑 | +187 |
+| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | 85 个红队技能，681 份披露报告拆成可执行模式 | +1,615 |
+| [obra/superpowers](https://github.com/obra/superpowers) | 编码 agent 的开发方法论，十几家客户端都能装 | +916 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 网页转 Markdown 的抓取基建，550+ 数据源 | +833 |
+| [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | 开源版 OpusClip，6 种直播回放源加 MCP server | +733 |
+| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 52 种图型，单文件 HTML+SVG，跟随品牌配色 | +731 |
 
 ---
 
@@ -157,9 +157,9 @@
 ## 📊 数据统计
 
 - **精选工具**: 69 款 + 最新趋势 5 个（本页）
-- **网页收录**: 202 个（含 142 个 GitHub 热门项目）
+- **网页收录**: 203 个（含 146 个 GitHub 热门项目）
 - **覆盖分类**: 16 大类
-- **数据更新**: 2026-11-24
+- **数据更新**: 2026-11-27
 
 ## 🤝 贡献指南
 
